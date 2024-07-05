@@ -86,7 +86,9 @@
                             </div>
                             <ol>
                                 <li>
-                                    diffableの差分確認処理はjavascript（diff.js）のみで動作しており、確認処理のために外部サーバ等にデータが送信されません。動作しているブラウザからソースコードを直接確認することもできます。
+                                    diffableの差分確認処理はjavascript（diff.js）のみで動作しており、確認処理のために外部サーバ等にデータが送信されません。動作しているブラウザからソースコードを直接確認することもできます。また実際に動作しているソースコードは<a
+                                        href="https://github.com/TetsuakiBaba/diffable/blob/main/diff.js"
+                                        target="_blank">こちら</a>で確認できます。
                                 </li>
                                 <li>
                                     diffableはソースコードがGitHubで公開されており、誰でもソースコードを確認できます。GitHubのページ機能を利用しているため実際に動作しているソースコードはGitHub上で確認できます。
@@ -96,6 +98,9 @@
                                 </li>
                                 <li>
                                     localStorage等を利用してCookieにデータを保存していません。処理が終わればブラウザ内のメモリにも残りません。
+                                </li>
+                                <li>
+                                    GitHubページでの通信はhttpsですので、通信内容は暗号化されていますが、そもそも外部にデータを送信するような処理は行っていないため、一切の入力情報が通信されることはありません。
                                 </li>
                                 <li>
                                     diffableでは外部にデータを送信する可能性のあるXMLHttpRequest及びfetch
