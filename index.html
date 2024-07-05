@@ -104,7 +104,8 @@
                                 </li>
                                 <li>
                                     diffableでは外部にデータを送信する可能性のあるXMLHttpRequest及びfetch
-                                    APIを監視しています。万が一外部にデータを送信しようとした場合、警告を表示します。
+                                    APIを監視しています。万が一外部にデータを送信しようとした場合、警告を表示します。この他 formタグやiframe,websocket,
+                                    navigator.sendBeacon, window.open等による外部データ送信がないことはindex.htmlのソースコードから確認できます。
                                 </li>
                             </ol>
 
